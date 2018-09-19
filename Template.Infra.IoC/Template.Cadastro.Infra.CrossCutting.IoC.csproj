@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>Template.Cadastro.Infra.CrossCutting.IoC.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>Template.Cadastro.Infra.CrossCutting.IoC.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Domain.Core\Template.Core.Domain.csproj" />
+    <ProjectReference Include="..\Template.Domain\Template.Cadastro.Domain.csproj" />
+    <ProjectReference Include="..\Template.Infra.Data\Template.Cadastro.Infra.Data.csproj" />
+    <ProjectReference Include="..\Template.Infra.CrossCutting.Autenticacao\Template.Cadastro.Infra.CrossCutting.Autenticacao.csproj" />
+  </ItemGroup>
+</Project>
