@@ -1,0 +1,9 @@
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.AssemblyInfo.cs
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\bin\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.deps.json
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\bin\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.dll
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\bin\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.pdb
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.dll
+c:\users\5a_pc1\source\repos\Template\Template.Infra.IoC\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Infra.IoC\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache

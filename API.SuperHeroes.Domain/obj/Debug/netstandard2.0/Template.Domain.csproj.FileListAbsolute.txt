@@ -1,0 +1,12 @@
+c:\users\5a_pc1\source\repos\Template\Template.Domain\bin\Debug\netstandard2.0\Template.Domain.deps.json
+c:\users\5a_pc1\source\repos\Template\Template.Domain\bin\Debug\netstandard2.0\Template.Domain.dll
+c:\users\5a_pc1\source\repos\Template\Template.Domain\bin\Debug\netstandard2.0\Template.Domain.pdb
+c:\users\5a_pc1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.csprojResolveAssemblyReference.cache
+c:\users\5a_pc1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.csproj.CoreCompileInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.AssemblyInfoInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.AssemblyInfo.cs
+c:\users\5a_pc1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.dll
+c:\users\5a_pc1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Debug\netstandard2.0\Template.Domain.Core.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Debug\netstandard2.0\Template.Domain.Core.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Debug\netstandard2.0\Template.Domain.csproj.CopyComplete

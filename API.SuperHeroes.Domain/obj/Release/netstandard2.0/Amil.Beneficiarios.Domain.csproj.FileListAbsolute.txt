@@ -1,0 +1,9 @@
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\bin\Release\netstandard2.0\Amil.Beneficiarios.Domain.deps.json
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\bin\Release\netstandard2.0\Amil.Beneficiarios.Domain.dll
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\bin\Release\netstandard2.0\Amil.Beneficiarios.Domain.pdb
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\obj\Release\netstandard2.0\Amil.Beneficiarios.Domain.csprojAssemblyReference.cache
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\obj\Release\netstandard2.0\Amil.Beneficiarios.Domain.csproj.CoreCompileInputs.cache
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\obj\Release\netstandard2.0\Amil.Beneficiarios.Domain.AssemblyInfoInputs.cache
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\obj\Release\netstandard2.0\Amil.Beneficiarios.Domain.AssemblyInfo.cs
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\obj\Release\netstandard2.0\Amil.Beneficiarios.Domain.dll
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Domain\obj\Release\netstandard2.0\Amil.Beneficiarios.Domain.pdb

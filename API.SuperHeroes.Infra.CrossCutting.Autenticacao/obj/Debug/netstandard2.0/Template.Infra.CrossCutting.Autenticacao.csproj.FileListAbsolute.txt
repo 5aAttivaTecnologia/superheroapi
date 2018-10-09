@@ -1,0 +1,9 @@
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\bin\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.deps.json
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\bin\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.dll
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\bin\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.pdb
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.csprojResolveAssemblyReference.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.csproj.CoreCompileInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.AssemblyInfoInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.AssemblyInfo.cs
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.dll
+c:\users\5a_pc1\source\repos\Template\Template.Infra.CrossCutting.Autenticacao\obj\Debug\netstandard2.0\Template.Infra.CrossCutting.Autenticacao.pdb

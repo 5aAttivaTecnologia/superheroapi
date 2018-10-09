@@ -1,0 +1,11 @@
+C:\Users\5A_PC1\source\repos\Template\Template.Service\bin\Debug\netcoreapp2.0\Template.Cadastro.Service.deps.json
+C:\Users\5A_PC1\source\repos\Template\Template.Service\bin\Debug\netcoreapp2.0\Template.Cadastro.Service.runtimeconfig.json
+C:\Users\5A_PC1\source\repos\Template\Template.Service\bin\Debug\netcoreapp2.0\Template.Cadastro.Service.runtimeconfig.dev.json
+C:\Users\5A_PC1\source\repos\Template\Template.Service\bin\Debug\netcoreapp2.0\Template.Cadastro.Service.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Service\bin\Debug\netcoreapp2.0\Template.Cadastro.Service.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Service\obj\Debug\netcoreapp2.0\Template.Cadastro.Service.csprojResolveAssemblyReference.cache
+C:\Users\5A_PC1\source\repos\Template\Template.Service\obj\Debug\netcoreapp2.0\Template.Cadastro.Service.csproj.CoreCompileInputs.cache
+C:\Users\5A_PC1\source\repos\Template\Template.Service\obj\Debug\netcoreapp2.0\Template.Cadastro.Service.AssemblyInfoInputs.cache
+C:\Users\5A_PC1\source\repos\Template\Template.Service\obj\Debug\netcoreapp2.0\Template.Cadastro.Service.AssemblyInfo.cs
+C:\Users\5A_PC1\source\repos\Template\Template.Service\obj\Debug\netcoreapp2.0\Template.Cadastro.Service.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Service\obj\Debug\netcoreapp2.0\Template.Cadastro.Service.pdb

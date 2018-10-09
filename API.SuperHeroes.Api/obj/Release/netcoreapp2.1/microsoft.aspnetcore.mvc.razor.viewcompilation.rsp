@@ -1,0 +1,5 @@
+C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Service
+--output-path=obj\Release\netcoreapp2.1\
+--application-name=Amil.Beneficiarios.Api
+--content-root=C:\Clinical\Amil-MedLefe-Beneficiarios\src\Amil.Beneficiarios.Service
+--file=

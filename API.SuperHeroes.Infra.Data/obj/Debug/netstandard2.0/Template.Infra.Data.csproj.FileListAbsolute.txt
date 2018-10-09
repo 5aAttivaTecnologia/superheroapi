@@ -1,0 +1,14 @@
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Infra.Data.deps.json
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Infra.Data.dll
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Infra.Data.pdb
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.csprojResolveAssemblyReference.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.csproj.CoreCompileInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.AssemblyInfoInputs.cache
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.AssemblyInfo.cs
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.dll
+c:\users\5a_pc1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Domain.Core.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Domain.Core.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Infra.Data\obj\Debug\netstandard2.0\Template.Infra.Data.csproj.CopyComplete
+C:\Users\5A_PC1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Domain.Cadastro.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Infra.Data\bin\Debug\netstandard2.0\Template.Domain.Cadastro.pdb

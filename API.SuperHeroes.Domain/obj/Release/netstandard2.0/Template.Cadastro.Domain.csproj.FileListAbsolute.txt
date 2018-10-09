@@ -1,0 +1,14 @@
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Cadastro.Domain.deps.json
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Cadastro.Domain.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Cadastro.Domain.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Core.Domain.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Framework.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Core.Domain.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\bin\Release\netstandard2.0\Template.Framework.pdb
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.csprojResolveAssemblyReference.cache
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.csproj.CoreCompileInputs.cache
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.AssemblyInfoInputs.cache
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.AssemblyInfo.cs
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.csproj.CopyComplete
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.dll
+C:\Users\5A_PC1\source\repos\Template\Template.Domain\obj\Release\netstandard2.0\Template.Cadastro.Domain.pdb
