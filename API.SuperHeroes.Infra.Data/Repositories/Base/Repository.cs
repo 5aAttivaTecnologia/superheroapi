@@ -1,5 +1,6 @@
 ﻿using API.SuperHeroes.Domain.Entidade.Base;
 using API.SuperHeroes.Domain.Interfaces.Base;
+using API.SuperHeroes.Domain.Interfaces.UoW;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
@@ -10,7 +11,7 @@ namespace API.SuperHeroes.Infra.Data.Repositories.Base
         readonly protected DbContext _context;
         readonly DbSet<T> _dbEntidade;
 
-        protected Repository(DbContext context)
+        protected Repository(DbContext context, IUnitOfWorkSuperheroes unitOfWorkSuperheroes)
         {
             _context = context;
             _dbEntidade = _context.Set<T>();

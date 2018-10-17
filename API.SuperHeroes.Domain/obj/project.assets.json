@@ -7204,7 +7204,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://repository.amil.com.br/repository/nuget-group/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

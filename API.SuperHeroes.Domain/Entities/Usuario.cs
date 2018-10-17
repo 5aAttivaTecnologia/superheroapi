@@ -1,4 +1,5 @@
 ﻿using API.SuperHeroes.Domain.Entidade.Validacoes;
+using System;
 
 namespace API.SuperHeroes.Domain.Entidade
 {
@@ -12,9 +13,10 @@ namespace API.SuperHeroes.Domain.Entidade
 
         }
 
-        public int Nr_CPF { get; set; }
+        public string Nr_CPF { get; set; }
         public string Id_Hash_autorização { get; set; }
-        public string Dt_Atualizacao_HasH_Autenticacao { get; set; }
+        public DateTime Dt_Atualizacao_HasH_Autenticacao { get; set; }
+       
 
         public override bool Validar()
         {

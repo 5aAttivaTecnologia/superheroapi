@@ -4,11 +4,8 @@ using API.SuperHeroes.Infra.Data.Mapping;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace API.SuperHeroes.Infra.Data.Context
 {
@@ -17,6 +14,7 @@ namespace API.SuperHeroes.Infra.Data.Context
         private readonly IHostingEnvironment _env;
 
         public DbSet<Superheroe> Superheroes { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
         public SuperheroeContext(IHostingEnvironment env)
         {
@@ -26,6 +24,7 @@ namespace API.SuperHeroes.Infra.Data.Context
         public void MappingRepositoryModels(ModelBuilder modelBuilder)
         {
             modelBuilder.AddConfiguration(new SuperheroeMap());
+            modelBuilder.AddConfiguration(new UsuarioMap());
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

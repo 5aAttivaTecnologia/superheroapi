@@ -19,11 +19,11 @@ namespace Eventos.IO.Services.Api.Configuration
                 s.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "API Teste Front End SupoerHeroes",
-                    Description = "API para teste de Front End Suporeheroes.",
+                    Title = "API Teste Front End SuperHeroes",
+                    Description = "API para teste de Front End 5A Attiva.",
                     TermsOfService = "Nenhum",
                     Contact = new Contact { Name = "", Email = "", Url = "http://localhost:" },
-                    License = new License { Name = "MIT", Url = "http://www.google.com.br" }
+                    License = new License { Name = "", Url = "http://www.google.com.br" }
                 });
 
                 //s.OperationFilter<AuthorizationHeaderParameterOperationFilter>();

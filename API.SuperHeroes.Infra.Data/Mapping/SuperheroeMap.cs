@@ -27,7 +27,7 @@ namespace API.SuperHeroes.Infra.Data.Mapping
 
             builder.Property(t => t.Ds_superheroe)
                 .HasColumnName("ds_superheroe")
-                .HasColumnType("varchar");
+                .HasColumnType("varchar(max)");
 
             builder.Property(t => t.St_ativo)
                 .HasColumnName("st_ativo")

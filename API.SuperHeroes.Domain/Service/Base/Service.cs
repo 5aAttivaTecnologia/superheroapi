@@ -2,6 +2,7 @@
 using API.SuperHeroes.Domain.Events;
 using API.SuperHeroes.Domain.Handlers;
 using API.SuperHeroes.Domain.Interfaces;
+using API.SuperHeroes.Domain.Interfaces.Repositories;
 using API.SuperHeroes.Domain.Interfaces.UoW;
 using System;
 using System.Linq;
@@ -12,13 +13,21 @@ namespace API.SuperHeroes.Domain.Service.Base
     {
         protected DomainNotificationHandler _domainNotification;
         protected IUnitOfWorkSuperheroes _unitOfWorkSuperheroes;
-        protected IUnitOfWorkUsuario _unitOfWorkUsuario;
+        private IHandler<DomainNotification> domainNotification;
+        private IUnitOfWorkSuperheroes unitOfWorkSuperheroes;
+        private IUsuarioRepository usuariorepository;
 
-        protected Service(IHandler<DomainNotification> domainNotification, IUnitOfWorkSuperheroes unitOfWorkSuperheroes , IUnitOfWorkUsuario unitOfWorkUsuario)
+        protected Service(IHandler<DomainNotification> domainNotification, IUnitOfWorkSuperheroes unitOfWorkSuperheroes )
         {
             _domainNotification = (DomainNotificationHandler)domainNotification;
             _unitOfWorkSuperheroes = unitOfWorkSuperheroes;
-            _unitOfWorkUsuario = unitOfWorkUsuario;
+        }
+
+        protected Service(IHandler<DomainNotification> domainNotification, IUnitOfWorkSuperheroes unitOfWorkSuperheroes, IUsuarioRepository usuariorepository)
+        {
+            this.domainNotification = domainNotification;
+            this.unitOfWorkSuperheroes = unitOfWorkSuperheroes;
+            this.usuariorepository = usuariorepository;
         }
 
         protected bool VerificarEntidade(Entidade<T> entidade)
@@ -47,7 +56,6 @@ namespace API.SuperHeroes.Domain.Service.Base
             try
             {
                 _unitOfWorkSuperheroes.Commit();
-                _unitOfWorkUsuario.Commit();
             }
             catch (Exception)
             {

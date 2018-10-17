@@ -1,12 +1,10 @@
-﻿using API.SuperHeroes.Domain.DTO;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using API.SuperHeroes.Domain.Entidade;
 
 namespace API.SuperHeroes.Domain.Interfaces.Services
 {
     public interface IUsuarioService
     {
-        UsuarioDTO ObterUsuarioPorCPF(string nrcpf);
+        Usuario ObterUsuarioPorCPF(string nrcpf);
+        Usuario CadastraUsuario(string nrcpf);
     }
 }

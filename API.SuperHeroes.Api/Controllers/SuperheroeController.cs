@@ -14,30 +14,64 @@ namespace API.SuperHeroes.Api.Controllers
 
         public SuperheroeController(
             ISuperheroeService superheroeService,
-            IHandler<DomainNotification> domainNotificationHandler) 
+            IHandler<DomainNotification> domainNotificationHandler)
             : base(domainNotificationHandler)
         {
 
-           _superheroeService = superheroeService;
+            _superheroeService = superheroeService;
         }
 
         [HttpGet("BuscarHeroisPorId")]
-        public IActionResult ObterSuperheroePorId(int id)
-            => Resposta(_superheroeService.ObterSuperheroeCompletoPorId(id));
+        public IActionResult ObterSuperheroePorId(int id, string token)
+        {
+            if (_superheroeService.ValidaTokenAttribute(token))
+            {
+                return Resposta(_superheroeService.ObterSuperheroeCompletoPorId(id, token));
+            }
+            else
+            {
+                return StatusCode(401, new
+                {
+                    sucesso = false,
+                    erro = "Acesso Não Autorizado.Token Inválido ou Inexistente.Refaça a Autenticação e Repita o Operação.(Erro: 401)"
+                });
+            }
+        }
 
         [HttpGet("BuscarHeroisPorNome")]
-        public IActionResult ObterSuperheroesPorstring(string nome)
-            => Resposta(_superheroeService.ObterSuperheroesCompletoPorNome(nome));
+        public IActionResult ObterSuperheroesPorstring(string nome, string token)
+        {
+            if (_superheroeService.ValidaTokenAttribute(token))
+            {
+                return Resposta(_superheroeService.ObterSuperheroesCompletoPorNome(nome, token));
+            }
+            else
+            {
+                return StatusCode(401, new
+                {
+                    sucesso = false,
+                    erro = "Acesso Não Autorizado.Token Inválido ou Inexistente.Refaça a Autenticação e Repita o Operação.(Erro: 401)"
+                });
+            }
+        }
 
 
         [HttpGet("ListaSuperHeroisPorPagina")]
-        public IActionResult ObterListaSuperHeoresPaginada(string nome, int pagina, int qtheroispagina)
-            => Resposta(_superheroeService.ObterListaSuperHeoresPaginada(nome, pagina, qtheroispagina));
+        public IActionResult ObterListaSuperHeoresPaginada(string nome, int pagina, int qtheroispagina, string token)
+        {
+            if (_superheroeService.ValidaTokenAttribute(token))
+            {
+                return Resposta(_superheroeService.ObterListaSuperHeoresPaginada(nome, pagina, qtheroispagina, token));
+            }
+            else
+            {
+                return StatusCode(401, new
+                {
+                    sucesso = false,
+                    erro = "Acesso Não Autorizado.Token Inválido ou Inexistente.Refaça a Autenticação e Repita o Operação.(Erro: 401)"
+                });
+            }          
 
-
-        //Todo: Inserir os demais métodos que farão parte da API:
-        // Cadastrar CPF que retorna token;
-        // Verifica CPF pra liberar acesso;
-        
+        }
     }
 }

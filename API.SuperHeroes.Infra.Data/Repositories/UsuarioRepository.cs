@@ -1,33 +1,59 @@
-﻿using API.SuperHeroes.Domain.DTO;
-using API.SuperHeroes.Domain.Entidade;
+﻿using API.SuperHeroes.Domain.Entidade;
 using API.SuperHeroes.Domain.Interfaces.Repositories;
+using API.SuperHeroes.Domain.Interfaces.UoW;
 using API.SuperHeroes.Infra.Data.Context;
-using System;
-using System.Collections.Generic;
+using API.SuperHeroes.Infra.Data.UoW;
 using System.Linq;
-using System.Text;
 
 namespace API.SuperHeroes.Infra.Data.Repositories
 {
     public sealed class UsuarioRepository
         : Base.Repository<Usuario>, IUsuarioRepository
     {
-        public UsuarioContext _usuarioContext { get => (UsuarioContext)_context; }
+        public SuperheroeContext _usuarioContext { get => (SuperheroeContext)_context; }
 
-        public UsuarioRepository(UsuarioContext usuarioContext)
-            : base(usuarioContext)
+        public UsuarioRepository(SuperheroeContext usuarioContext, IUnitOfWorkSuperheroes unitOfWorkSuperheroes)
+            : base(usuarioContext, unitOfWorkSuperheroes)
         {
         }
 
-        public IQueryable<UsuarioDTO> ObterUsuarioPorCPF(string nrcpf)
+        public IQueryable<Usuario> ObterUsuarioPorCPF(string nrcpf)
         {
             return from x in _usuarioContext.Usuario
                    where x.Nr_CPF.Equals(nrcpf)
-                   select new UsuarioDTO
+                   select new Usuario
                    {
-                       NR_CPF = x.Nr_CPF,
-                       Id_hash_autenticacao = x.Id_Hash_autorização,
-                       Dt_atualizacao_hash = x.Dt_Atualizacao_HasH_Autenticacao
+                       Nr_CPF = x.Nr_CPF,
+                       Id_Hash_autorização = x.Id_Hash_autorização,
+                       Dt_Atualizacao_HasH_Autenticacao = x.Dt_Atualizacao_HasH_Autenticacao
+                   };
+        }
+
+        public void CadastraUsuario(Usuario nrcpf)
+        {
+            _usuarioContext.Add(nrcpf);
+
+            UnitOfWorkSuperheroes unit = new UnitOfWorkSuperheroes(_usuarioContext);
+            unit.Commit();
+        }
+
+        public void AtualizaHash(Usuario usuario)
+        {
+            _usuarioContext.Update(usuario);
+
+            UnitOfWorkSuperheroes unit = new UnitOfWorkSuperheroes(_usuarioContext);
+            unit.Commit();
+        }
+
+        public IQueryable<Usuario> BuscaToken(string token)
+        {
+            return from x in _usuarioContext.Usuario
+                   where x.Id_Hash_autorização.Equals(token)
+                   select new Usuario
+                   {
+                       Nr_CPF = x.Nr_CPF,
+                       Id_Hash_autorização = x.Id_Hash_autorização,
+                       Dt_Atualizacao_HasH_Autenticacao = x.Dt_Atualizacao_HasH_Autenticacao
                    };
         }
     }
