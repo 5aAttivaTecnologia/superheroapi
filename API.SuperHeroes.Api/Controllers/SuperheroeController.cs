@@ -26,7 +26,7 @@ namespace API.SuperHeroes.Api.Controllers
         {
             if (_superheroeService.ValidaTokenAttribute(token))
             {
-                return Resposta(_superheroeService.ObterSuperheroeCompletoPorId(id, token));
+                return Resposta(_superheroeService.ObterSuperheroeCompletoPorId(id));
             }
             else
             {
@@ -43,7 +43,7 @@ namespace API.SuperHeroes.Api.Controllers
         {
             if (_superheroeService.ValidaTokenAttribute(token))
             {
-                return Resposta(_superheroeService.ObterSuperheroesCompletoPorNome(nome, token));
+                return Resposta(_superheroeService.ObterSuperheroesCompletoPorNome(nome));
             }
             else
             {
@@ -61,7 +61,7 @@ namespace API.SuperHeroes.Api.Controllers
         {
             if (_superheroeService.ValidaTokenAttribute(token))
             {
-                return Resposta(_superheroeService.ObterListaSuperHeoresPaginada(nome, pagina, qtheroispagina, token));
+                return Resposta(_superheroeService.ObterListaSuperHeroesPaginada(nome, pagina, qtheroispagina));
             }
             else
             {

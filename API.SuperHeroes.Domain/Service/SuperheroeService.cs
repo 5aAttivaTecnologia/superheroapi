@@ -30,23 +30,19 @@ namespace API.SuperHeroes.Domain.Service
 
 
 
-        public Superheroe ObterSuperheroeCompletoPorId(int superheroId, string token)
+        public Superheroe ObterSuperheroeCompletoPorId(int superheroId)
         {
             var personagem = _superheroeRepository.ObterSuperheroeCompltoPorId(superheroId).FirstOrDefault();
 
             if (personagem == null)
                 return personagem;
 
-            var pathImagem = $"{Directory.GetCurrentDirectory()}\\..\\imagens\\";
-
-            personagem.Im_superheroe = File.Exists($"{pathImagem}{personagem.Id_superheroe}.jpg")
-                ? File.ReadAllBytes($"{pathImagem}{personagem.Id_superheroe}.jpg")
-                : File.ReadAllBytes($"{pathImagem}default.jpg");
+            personagem.Im_superheroe = BuscaImagem(personagem);
 
             return personagem;
         }
 
-        public List<Superheroe> ObterSuperheroesCompletoPorNome(string nome, string token)
+        public List<Superheroe> ObterSuperheroesCompletoPorNome(string nome)
         {
             var listapersonagens = _superheroeRepository.ObterSuperheroesCompltoPorNome(nome).ToList();
 
@@ -55,18 +51,14 @@ namespace API.SuperHeroes.Domain.Service
 
             foreach (Superheroe personagem in listapersonagens)
             {
-                var pathImagem = $"{Directory.GetCurrentDirectory()}\\..\\imagens\\";
-
-                personagem.Im_superheroe = File.Exists($"{pathImagem}{personagem.Id_superheroe}.jpg")
-                    ? File.ReadAllBytes($"{pathImagem}{personagem.Id_superheroe}.jpg")
-                    : File.ReadAllBytes($"{pathImagem}default.jpg");
+                personagem.Im_superheroe = BuscaImagem(personagem);
             }
 
 
             return listapersonagens;
         }
 
-        public List<Superheroe> ObterListaSuperHeoresPaginada(string nome, int pagina, int nrpagina, string token)
+        public List<Superheroe> ObterListaSuperHeroesPaginada(string nome, int pagina, int nrpagina)
         {
             
             if (nrpagina == 0)
@@ -79,11 +71,7 @@ namespace API.SuperHeroes.Domain.Service
 
                 foreach (Superheroe personagem in listapersonagens)
                 {
-                    var pathImagem = $"{Directory.GetCurrentDirectory()}\\..\\imagens\\";
-
-                    personagem.Im_superheroe = File.Exists($"{pathImagem}{personagem.Id_superheroe}.jpg")
-                        ? File.ReadAllBytes($"{pathImagem}{personagem.Id_superheroe}.jpg")
-                        : File.ReadAllBytes($"{pathImagem}default.jpg");
+                    personagem.Im_superheroe = BuscaImagem(personagem);
                 }   
 
             return listapersonagens;
@@ -106,6 +94,17 @@ namespace API.SuperHeroes.Domain.Service
 
 
             return validado;
+        }
+
+        public byte[] BuscaImagem(Superheroe _superheroe)
+        {
+            var pathImagem = $"{Directory.GetCurrentDirectory()}\\..\\imagens\\";
+
+            byte[]  imagem = Directory.Exists(pathImagem) ?  File.Exists($"{pathImagem}{_superheroe.Id_superheroe}.jpg")
+                ? File.ReadAllBytes($"{pathImagem}{_superheroe.Id_superheroe}.jpg")
+                : File.ReadAllBytes($"{pathImagem}default.jpg") : null;
+
+            return imagem;
         }
 
     }

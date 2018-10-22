@@ -34,7 +34,7 @@ namespace API.SuperHeroes.Domain.Service
                 return AtualizaHash(objusuario);            
         }
 
-        private Usuario AtualizaHash(Usuario objusuario)
+        public Usuario AtualizaHash(Usuario objusuario)
         {
             objusuario.Id_Hash_autorização = alfanumericoAleatorio(30);
             objusuario.Dt_Atualizacao_HasH_Autenticacao = DateTime.Now;

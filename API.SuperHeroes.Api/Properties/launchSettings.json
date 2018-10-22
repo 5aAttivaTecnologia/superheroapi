@@ -16,10 +16,10 @@
         "ASPNETCORE_ENVIRONMENT": "QA"
       }
     },
-    "Amil.Beneficiarios.Api": {
+    "SuperHeroes.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/beneficiarios",
+      "launchUrl": "api/superheroes",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "QA"
       },

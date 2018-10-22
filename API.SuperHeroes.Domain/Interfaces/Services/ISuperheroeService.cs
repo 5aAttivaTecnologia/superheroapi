@@ -5,9 +5,9 @@ namespace API.SuperHeroes.Domain.Interfaces.Services
 {
     public interface ISuperheroeService
     {
-        Superheroe ObterSuperheroeCompletoPorId(int superheroId, string token);
-        List<Superheroe> ObterSuperheroesCompletoPorNome(string nome, string token);
-        List<Superheroe> ObterListaSuperHeoresPaginada(string nome, int pagina, int nrpagina, string token);
+        Superheroe ObterSuperheroeCompletoPorId(int superheroId);
+        List<Superheroe> ObterSuperheroesCompletoPorNome(string nome);
+        List<Superheroe> ObterListaSuperHeroesPaginada(string nome, int pagina, int nrpagina);
         bool ValidaTokenAttribute(string token);
     }
 }
