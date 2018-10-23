@@ -56,5 +56,16 @@ namespace API.SuperHeroes.Infra.Data.Repositories
                        Dt_Atualizacao_HasH_Autenticacao = x.Dt_Atualizacao_HasH_Autenticacao
                    };
         }
+
+        public IQueryable<Usuario> ListaUsuarios()
+        {
+            return from x in _usuarioContext.Usuario
+                   select new Usuario
+                   {
+                       Nr_CPF = x.Nr_CPF,
+                       Id_Hash_autorização = x.Id_Hash_autorização,
+                       Dt_Atualizacao_HasH_Autenticacao = x.Dt_Atualizacao_HasH_Autenticacao
+                   };
+        }
     }
 }

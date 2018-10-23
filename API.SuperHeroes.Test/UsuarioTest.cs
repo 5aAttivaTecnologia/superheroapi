@@ -1,12 +1,9 @@
 ﻿using API.SuperHeroes.Domain.Entidade;
 using API.SuperHeroes.Domain.Interfaces.Repositories;
-using API.SuperHeroes.Domain.Interfaces.Services;
 using API.SuperHeroes.Domain.Interfaces.UoW;
 using API.SuperHeroes.Domain.Service;
 using API.SuperHeroes.Domain.Handlers;
-using API.SuperHeroes.Domain.Interfaces.UoW;
 using Bogus;
-using Bogus.Extensions.Brazil;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -87,12 +84,21 @@ namespace API.SuperHeroes.Test
             string hash = _usuarioservice.alfanumericoAleatorio(30);
 
             Assert.Equal(30, hash.Length);
-        }        
+        }
+
+        [Fact]
+        public void ListaUsuariosTes()
+        {
+            List<Usuario> list = _usuarioservice.ListaUsuarios();
+
+            Assert.NotNull(list);
+
+        }
 
         public void SetupTestes()
         {
             _usuariorepository.Setup(x => x.ObterUsuarioPorCPF(cpf)).Returns(lusuarios.AsQueryable());
-            
+            _usuariorepository.Setup(x => x.ListaUsuarios()).Returns(lusuarios.AsQueryable());
         }
 
         public void ObterObjetos()

@@ -5,6 +5,7 @@ using API.SuperHeroes.Domain.Interfaces.Repositories;
 using API.SuperHeroes.Domain.Interfaces.Services;
 using API.SuperHeroes.Domain.Interfaces.UoW;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace API.SuperHeroes.Domain.Service
@@ -22,16 +23,12 @@ namespace API.SuperHeroes.Domain.Service
             _usuariorepository = usuarioRepository;
         }
 
-            
+
         public Usuario ObterUsuarioPorCPF(string nrcpf)
         {
             var objusuario = _usuariorepository.ObterUsuarioPorCPF(nrcpf).FirstOrDefault();
 
-            if (objusuario == null)
-                //cadastrar o usuariopelo cpf e devolver os dados dele
-                return CadastraUsuario(nrcpf);
-            else
-                return AtualizaHash(objusuario);            
+            return objusuario == null ? CadastraUsuario(nrcpf) : AtualizaHash(objusuario);
         }
 
         public Usuario AtualizaHash(Usuario objusuario)
@@ -46,7 +43,7 @@ namespace API.SuperHeroes.Domain.Service
 
         public Usuario CadastraUsuario(string nrcpf)
         {
-            
+
 
             Usuario newobj = new Usuario();
             newobj.Nr_CPF = nrcpf;
@@ -55,7 +52,7 @@ namespace API.SuperHeroes.Domain.Service
 
             _usuariorepository.CadastraUsuario(newobj);
 
-            return newobj;           
+            return newobj;
         }
 
         public string alfanumericoAleatorio(int tamanho)
@@ -68,6 +65,28 @@ namespace API.SuperHeroes.Domain.Service
                           .ToArray());
             return result;
         }
-       
+
+        public bool ValidaSenha(string senhaadmin)
+        {             
+            bool validado = false;
+
+            if (senhaadmin == "superheroe5A")
+            {
+                validado = true;
+            }
+
+            return validado;
+        }
+
+        public List<Usuario> ListaUsuarios()
+        {
+            List<Usuario> listausers = _usuariorepository.ListaUsuarios().ToList();
+
+
+            if (listausers == null)
+                return listausers;
+
+            return listausers;
+        }
     }
 }

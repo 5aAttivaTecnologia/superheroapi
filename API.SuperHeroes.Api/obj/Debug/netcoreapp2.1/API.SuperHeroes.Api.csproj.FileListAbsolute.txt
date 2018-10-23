@@ -1,9 +1,3 @@
-C:\5A\Projects Base\5A-API-SuperHeroes\src\5A.SuperHeroes.Api\obj\Debug\netcoreapp2.1\API.SuperHeroes.Api.csprojAssemblyReference.cache
-C:\5A\Projects Base\5A-API-SuperHeroes\src\5A.SuperHeroes.Api\obj\Debug\netcoreapp2.1\API.SuperHeroes.Api.csproj.CoreCompileInputs.cache
-C:\5A\Projects Base\5A-API-SuperHeroes\src\5A.SuperHeroes.Api\obj\Debug\netcoreapp2.1\API.SuperHeroes.Api.RazorAssemblyInfo.cache
-C:\5A\Projects Base\5A-API-SuperHeroes\src\5A.SuperHeroes.Api\obj\Debug\netcoreapp2.1\API.SuperHeroes.Api.RazorAssemblyInfo.cs
-C:\5A\Projects Base\5A-API-SuperHeroes\src\5A.SuperHeroes.Api\obj\Debug\netcoreapp2.1\API.SuperHeroes.Api.AssemblyInfoInputs.cache
-C:\5A\Projects Base\5A-API-SuperHeroes\src\5A.SuperHeroes.Api\obj\Debug\netcoreapp2.1\API.SuperHeroes.Api.AssemblyInfo.cs
 C:\5A\Projects Base\API-SuperHeroes\src\API.SuperHeroes.Api\bin\Debug\netcoreapp2.1\API.SuperHeroes.Api.deps.json
 C:\5A\Projects Base\API-SuperHeroes\src\API.SuperHeroes.Api\bin\Debug\netcoreapp2.1\API.SuperHeroes.Api.runtimeconfig.json
 C:\5A\Projects Base\API-SuperHeroes\src\API.SuperHeroes.Api\bin\Debug\netcoreapp2.1\API.SuperHeroes.Api.runtimeconfig.dev.json

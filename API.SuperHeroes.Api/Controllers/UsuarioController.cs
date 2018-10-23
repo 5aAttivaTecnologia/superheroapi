@@ -26,7 +26,24 @@ namespace API.SuperHeroes.Api.Controllers
         }
 
         [HttpGet("buscarusuario")]
-        public IActionResult ObterSuperheroePorId(string cpf)
+        public IActionResult ObterUsuarioporCPF(string cpf)
             => Resposta( _ususarioService.ObterUsuarioPorCPF(cpf));
+
+        [HttpGet("listausuarios")]
+        public IActionResult ListaUsuarios(string senhaadmin)
+        {
+            if (_ususarioService.ValidaSenha(senhaadmin))
+            {
+                return Resposta(_ususarioService.ListaUsuarios());
+            }
+            else
+            {
+                return StatusCode(401, new
+                {
+                    sucesso = false,
+                    erro = "Acesso Não Autorizado. Senha Inválida. (Erro: 401)"
+                });
+            }
+        }
     }
 }

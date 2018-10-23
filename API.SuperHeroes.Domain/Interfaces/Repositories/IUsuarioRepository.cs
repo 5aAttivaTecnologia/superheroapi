@@ -11,5 +11,6 @@ namespace API.SuperHeroes.Domain.Interfaces.Repositories
         IQueryable<Usuario> BuscaToken(string token);
         void CadastraUsuario(Usuario nrcpf);
         void AtualizaHash(Usuario usuario);
+        IQueryable<Usuario> ListaUsuarios();
     }
 }
