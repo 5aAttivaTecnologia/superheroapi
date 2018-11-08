@@ -98,7 +98,8 @@ namespace API.SuperHeroes.Domain.Service
 
         public byte[] BuscaImagem(Superheroe _superheroe)
         {
-            var pathImagem = $"{Directory.GetCurrentDirectory()}\\..\\imagens\\";
+            //var pathImagem = $"{Directory.GetCurrentDirectory()}\\..\\imagens\\"; // Teste
+            var pathImagem = $"{Directory.GetCurrentDirectory()}\\imagens\\"; //Publish
 
             byte[]  imagem = Directory.Exists(pathImagem) ?  File.Exists($"{pathImagem}{_superheroe.Id_superheroe}.jpg")
                 ? File.ReadAllBytes($"{pathImagem}{_superheroe.Id_superheroe}.jpg")

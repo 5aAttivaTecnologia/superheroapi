@@ -50,7 +50,7 @@ namespace API.SuperHeroes.Infra.Data.Context
                 .Build();
 
             //optionsBuilder.UseOracle(config.GetConnectionString("OracleConnectionString"));
-            optionsBuilder.UseSqlServer(config.GetConnectionString("OracleConnectionString"));
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
         }
     }
 }

@@ -110,7 +110,6 @@ namespace API.SuperHeroes.Test
 
             lusuarios = new List<Usuario>();
             lusuarios.Add(_usuario);
-
         }
     }
 }

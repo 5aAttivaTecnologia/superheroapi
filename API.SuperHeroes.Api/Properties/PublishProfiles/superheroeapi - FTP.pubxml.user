@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOQ88N1axskqpYiHb5VPGHQAAAAACAAAAAAAQZgAAAAEAACAAAABrMS837arS59EtqBqL2llk2OSYkDyI5biGsIEJAQh8TAAAAAAOgAAAAAIAACAAAABMvUZo5tRgXiMGe5I5AG6b6d0dWiLsfxKu8AfO+7sruIAAAAB7x6nAVjTbUUvkyLxJKvviEkjj353nCZg1eVXrNRE772X0w5O8ZqKqUBKl3tytMQmXudtdtORPeu4Q1KVgPIlAZameNTr/p7p/5EPa1W+4IKQKCj1B+vxVBcIHsKwtVCO96ND4uH6L/2qQNvELiw2mh/9SQK5edwbxwd37TyBVLUAAAABFL6V6hIUOPuHOluf3JhCtBXjx1PmipQW5SIOLSX9zxiRI2K2t5j57S9Eyc/TMmeDqtiOjhB7dbcNlMkNru+CD</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.gear.host/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

@@ -27,7 +27,8 @@ namespace API.SuperHeroes.Infra.Data.Repositories
                    {
                        Id_superheroe = x.Id_superheroe,
                        Nm_superheroe = x.Nm_superheroe,
-                       Ds_superheroe = x.Ds_superheroe
+                       Ds_superheroe = x.Ds_superheroe,
+                       St_ativo      = x.St_ativo
                    };
         }
 
@@ -40,7 +41,8 @@ namespace API.SuperHeroes.Infra.Data.Repositories
                    {
                        Id_superheroe = x.Id_superheroe,
                        Nm_superheroe = x.Nm_superheroe,
-                       Ds_superheroe = x.Ds_superheroe
+                       Ds_superheroe = x.Ds_superheroe,
+                       St_ativo      = x.St_ativo
                    };
         }
 
@@ -52,7 +54,8 @@ namespace API.SuperHeroes.Infra.Data.Repositories
                          {
                              Id_superheroe = x.Id_superheroe,
                              Nm_superheroe = x.Nm_superheroe,
-                             Ds_superheroe = x.Ds_superheroe
+                             Ds_superheroe = x.Ds_superheroe,
+                             St_ativo      = x.St_ativo
                          });
 
             if (!string.IsNullOrEmpty(nome))
